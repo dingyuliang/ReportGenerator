@@ -264,6 +264,22 @@ namespace Palmmedia.ReportGenerator.Core.Parser
                 yield break;
             }
 
+            // Check whether there is an anchor link with URL:  https://github.com/colszowka/simplecov in <div id="footer">...</div>
+            elements = report.Descendants("CoverageDSPriv").ToArray();
+
+            if (elements.Length > 0)
+            {
+                foreach (var item in elements)
+                {
+                    Logger.DebugFormat(" " + Resources.InitiatingParser, "SimpleCov Parser");
+                    //new SimpleCovReportPreprocessor().Execute(item);
+
+                    //yield return new SimpleCovParser(this.assemblyFilter, this.classFilter, this.fileFilter).Parse(item);
+                }
+
+                yield break;
+            }
+
             elements = report.Descendants("results").ToArray();
 
             if (elements.Length > 0)

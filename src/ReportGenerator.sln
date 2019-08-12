@@ -143,6 +143,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "branch_unconditional", "bra
 		Testprojects\C++\Reports\gcov\branch_unconditional\main.cpp.gcov = Testprojects\C++\Reports\gcov\branch_unconditional\main.cpp.gcov
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ruby", "Ruby", "{9ADAA128-DC9B-4661-8FC5-0129A938ECE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
